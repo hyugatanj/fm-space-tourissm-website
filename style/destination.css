@@ -84,6 +84,7 @@ main {
   font-weight: var(--text-preset-8-weight);
   letter-spacing: var(--text-preset-8-letter-spacing);
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .text {
