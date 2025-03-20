@@ -54,12 +54,6 @@ nav {
   letter-spacing: 1.92px;
 }
 
-.nav-list ul {
-  display: flex;
-  align-items: center;
-  column-gap: 48px;
-  width: 100%;
-}
 .nav-list li{
   box-sizing: border-box;
   align-content: center;
@@ -76,13 +70,22 @@ nav {
   height: 3px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  transform: scaleX(0);
-  transition-duration: 0.3s;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .nav-list
 li:hover::after {
-  transform: scaleX(1);
+  opacity: 1;
+}
+
+.nav-list
+li.active:hover::after {
+  opacity: 1;
+}
+
+.nav-list li.js-is-active::after {
+  opacity: 0;
 }
 
 .js-is-active {
@@ -100,5 +103,3 @@ li:hover::after {
 .numb {
   font-weight: bold;
 }
-
-/* header - end */
