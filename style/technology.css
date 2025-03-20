@@ -1,0 +1,135 @@
+body {
+  background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 34.13px 0;
+}
+
+.content-container {
+  width: 906.67px;
+  height: 563.2px;
+  display: flex;
+  flex-direction: column;
+  gap: 17.07px;
+}
+
+.page-title {
+  width: fit-content;
+  height: 24px;
+  color: white;
+  display: flex;
+  gap: 17.07px;
+}
+
+.numb-title {
+  font-family: 'Barlow Condensed';
+  font-weight: bold;
+  font-size: 19.91px;
+  line-height: auto;
+  letter-spacing: 3.36px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.content-title {
+  font-family: 'barlow condensed';
+  font-size: 19.91px;
+  font-weight: 400;
+  line-height: auto;
+  letter-spacing: 2.84px;
+}
+
+.content {
+  width: 906.67px;
+  height: 522.13px;
+  display: flex;
+  align-items: center;
+  gap: 22.67px;
+}
+
+.pne-container {
+  width: 451.56px;
+  height: 216.18px;
+  display: flex;
+  gap: 45.51px;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: column;
+  gap: 22.76px;
+  height: 100%;
+  width: fit-content;
+  height: 100%;
+}
+
+.tab {
+  width: 57px;
+  height: 57px;
+  background-color: white;
+  color: var(--blue-900);
+  border-radius: 710.4px;
+}
+
+.explanation {
+  width: 349.16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 17.07px;
+}
+
+.rne-container {
+  display: flex;
+  flex-direction: column;
+  gap: 11.38px;
+}
+
+.rank {
+  font-family: bellefair;
+  font-size: 22.76px;
+  font-weight: 400px;
+  line-height: auto;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.5042);
+}
+
+.name {
+  font-family: bellefair;
+  font-size: 39.82px;
+  font-weight: 400px;
+  line-height: auto;
+  letter-spacing: 0;
+  color: white;
+}
+
+.description {
+  font-family: barlow;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 180%;
+  letter-spacing: 0;
+  color: var(--blue-300);
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 432.36px;
+}
+
+.image {
+  width: 100%;
+  height: 426.67px;
+}
