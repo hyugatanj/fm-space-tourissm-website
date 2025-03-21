@@ -48,6 +48,12 @@ main {
   display: flex;
   align-items: center;
   gap: 22.76px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero.show {
+  opacity: 1;
 }
 
 .explanation, .image-container {
@@ -112,21 +118,36 @@ main {
   gap: 28.44px;
 }
 
+.pagination ul {
+  display: flex;
+  gap: 28.87px;
+}
+
 .pagination-btn {
   width: 11px;
   height: 11px;
   border-radius: 100%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.pagination-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.js-page-active {
+  background-color: white !important;
 }
 
 .image-container {
+  height: 100%;
+  width: 383.29px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .image-content {
-  width: 100%;
+  width: 95%;
   height: 480.71px;
   mask-image: linear-gradient(to bottom, rgb(255, 255, 255,1) 70%, rgba(255,255,255,0));
 }
