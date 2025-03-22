@@ -11,13 +11,13 @@ body {
 
 main {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 34.13px 0;
 }
 
 .content-container {
-  width: 906.67px;
+  width: 789.33px;
   height: 563.2px;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ main {
   gap: 45.51px;
 }
 
-.pagination{
+.pagination ul{
   display: flex;
   flex-direction: column;
   gap: 22.76px;
@@ -74,11 +74,23 @@ main {
 }
 
 .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 57px;
   height: 57px;
-  background-color: white;
-  color: var(--blue-900);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
   border-radius: 710.4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.tab:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.js-active {
+  border-color: white !important;
 }
 
 .explanation {
