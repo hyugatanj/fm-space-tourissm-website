@@ -3,12 +3,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 28px;
+  height: 96px;
+  padding-top: 26px;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 .header_logo {
   width: fit-content;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,8 +21,9 @@ header {
 
 .logo {
   margin-right: 45.51px;
-  width: 34px;
-  height: 34px;
+  aspect-ratio: 1 / 1;
+  height: 60%;
+  width: auto;
   cursor: pointer;
 }
 
@@ -33,9 +37,13 @@ nav {
   display: flex;
   background-color: rgba(255, 255, 255, 0.05);
   flex-grow: 1;
-  height: 68.27px;
+  height: 100%;
   padding: 0px 45.51px;
   backdrop-filter: blur(8px);
+}
+
+.burger-btn {
+  display: none;
 }
 
 .nav-list {
@@ -102,4 +110,29 @@ li.active:hover::after {
 
 .numb {
   font-weight: bold;
+}
+
+@media (max-width: 848px) {
+  header {
+    padding-top: 0;
+  }
+
+  .header_logo {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_logo hr {
+    display: none;
+  }
+
+  nav {
+    flex: 1;
+  }
+}
+
+@media (max-width: 561px) {
+
 }

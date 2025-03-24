@@ -6,7 +6,8 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
-  min-height: 100svh;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* main - start */
@@ -16,16 +17,19 @@ main {
   padding: 91px 0px;
   box-sizing: border-box;
   height: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: center;
 }
 
 .hero {
-  width: 789.33px;
+  max-width: 800px;
+  min-width: 500px;
   height: 449.42px;
   display: flex;
   justify-content: space-between;
   align-items: end;
+  flex-shrink: 1;
 }
 
 .second-hero-container {
@@ -100,3 +104,63 @@ main {
   outline: 88px solid hsla(0, 0%, 100%, 0.25);
 }
 
+@media (max-width: 848px) {
+  body {
+    background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero {
+    width: 90vw;
+    height: 95%;
+  }
+
+  .second-hero-container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text {
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .upper {
+    font-family: var(--text-preset-5-font);
+    font-size: var(--text-preset-5-size);
+    font-weight: var(--text-preset-5-weight);
+    letter-spacing: var(--text-preset-5-letter-spacing);
+  }
+
+  .middle {
+   font-size: 10rem;
+  }
+
+  .description {
+    font-size: 1.125rem;
+    width: 80%;
+    align-self: center;
+  }
+
+
+  .explore-button-container {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 42%;
+  }
+
+  .explore {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-size: 2rem;
+  }
+}
