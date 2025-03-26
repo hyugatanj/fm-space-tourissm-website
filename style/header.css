@@ -115,6 +115,7 @@ li.active:hover::after {
 @media (max-width: 848px) {
   header {
     padding-top: 0;
+    height: 88px;
   }
 
   .header_logo {
@@ -134,27 +135,43 @@ li.active:hover::after {
 }
 
 @media (max-width: 561px) {
+  .header_logo {
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 24px;
+    height: 40px;
+  }
+
+  .logo {
+    margin: 0;
+    height: 100%;
+  }
+
   .burger-btn {
     display: flex;
-    font-size: 50px;
+    align-items: center;
+    font-size: 43px;
     color: white;
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: auto;
     cursor: pointer;
   }
 
   header {
-    border: 1px solid red;
-    width: 100%;
+    min-width: 100vw;
     flex-shrink: 0;
+    flex-wrap: nowrap;
   }
   
   nav {
-    border: 1px solid green;
     justify-content: flex-end;
+    flex: 1;
+    padding: 0;
+    padding-right: 24px;
     align-items: center;
     background-color: transparent;
     backdrop-filter: none;
+    height: 40px;
   }
 
   .nav-list {

@@ -171,19 +171,38 @@ main {
     height: 100vh;
   }
 
-  .upper {
-    font-size: 1.75rem;
+  .hero {
+    min-width: 100%;
+
   }
 
-  .middle {
-    font-size: 9rem;
+  .text {
+    flex: 1;
   }
 
-  .description {
-    font-size: 1.125rem;
+  .explore-button-container {
+    flex: 1;
+    width: 100%;
   }
 
   .explore {
-    font-size: 2rem;
+    max-height: 144px;
+    font-size: clamp(0.5rem, 5vw, 1.3rem);
+  }
+
+  main {
+    padding: 24px 24px;
+  }
+
+  .upper {
+    font-size: clamp(10px, 5vw, 1.75rem);
+  }
+
+  .middle {
+    font-size: clamp(50px, 26vw, 9rem);
+  }
+
+  .description {
+    font-size: clamp(5px, 4vw, 1.125rem);
   }
 }
