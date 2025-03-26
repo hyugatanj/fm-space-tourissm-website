@@ -134,5 +134,30 @@ li.active:hover::after {
 }
 
 @media (max-width: 561px) {
+  .burger-btn {
+    display: flex;
+    font-size: 50px;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+  }
 
+  header {
+    border: 1px solid red;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  nav {
+    border: 1px solid green;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+
+  .nav-list {
+    display: none;
+  }
 }

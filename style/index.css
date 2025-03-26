@@ -164,3 +164,26 @@ main {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 561px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .upper {
+    font-size: 1.75rem;
+  }
+
+  .middle {
+    font-size: 9rem;
+  }
+
+  .description {
+    font-size: 1.125rem;
+  }
+
+  .explore {
+    font-size: 2rem;
+  }
+}
