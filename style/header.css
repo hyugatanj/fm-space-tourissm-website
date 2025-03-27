@@ -135,6 +135,10 @@ li.active:hover::after {
 }
 
 @media (max-width: 561px) {
+  .body {
+    position: relative;
+  }
+
   .header_logo {
     flex: 1;
     justify-content: flex-start;
@@ -150,7 +154,7 @@ li.active:hover::after {
   .burger-btn {
     display: flex;
     align-items: center;
-    font-size: 43px;
+    font-size: 30px;
     color: white;
     height: 100%;
     width: auto;
@@ -176,5 +180,71 @@ li.active:hover::after {
 
   .nav-list {
     display: none;
+  }
+
+  .js-active {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 254px;
+    backdrop-filter: blur(10px);
+    background: #0b0d1719;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 32px;
+  }
+
+  .js-active .burger-btn {
+    height: 88px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 24px;
+  }
+
+  .js-active .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .js-active .nav-list li {
+    width: 100%;
+    height: 15px;
+  }
+
+  .js-active .nav-list .nav-button {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .js-active .nav-list li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 3px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .js-active .js-is-active {
+    border-bottom: 0;
+    border-right: 3px solid white;
+  }
+
+  .js-active .burger-btn::before {
+    content: X;
   }
 }
