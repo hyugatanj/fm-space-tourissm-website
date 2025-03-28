@@ -26,7 +26,7 @@ main {
 .tittle {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
   letter-spacing: 3.36px;
   line-height: auto;
   color: rgba(255, 255, 255, 0.25);
@@ -34,11 +34,13 @@ main {
 
 .hero-title {
   font-family: var(--text-preset-5-font);
-  font-size: 20px;
+  font-size: 28px;
   font-weight: var(--text-preset-5-weight);
   letter-spacing: 2.84px;
   line-height: auto;
   margin-bottom: 17.07px;
+  display: flex;
+  gap: 24px;
 }
 
 .second-hero {
@@ -79,6 +81,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 50%;
+  row-gap: 40px;
 }
 
 .explanation {
@@ -158,7 +161,6 @@ main {
   text-align: justify;
   font-size:12.8px;
   font-weight: var(--text-preset-9-weight);
-  line-height: 180%;
   letter-spacing: 0px;
   color: var(--blue-300);
 }
@@ -196,4 +198,107 @@ main {
   font-weight: 0px;
   letter-spacing: 0px;
   color: white;
+}
+
+@media (max-width: 848px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    padding: 40px 40px;
+    flex: 1;
+  }
+
+  .hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .second-hero.show {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .left {
+    flex: 1;
+    width: 100%;
+  }
+
+  .img-container {
+    max-width: 300px;
+  }
+
+  .right {
+    flex: 1;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .explanation {
+    width: 83%;
+    gap: 24px;
+    height: fit-content;
+  }
+
+  .explanation ul{
+    justify-content: center;
+  }
+
+  .tabs {
+    font-size: 1rem;
+  }
+
+  .text {
+    height: auto;
+    gap: 1rem;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 6.25rem;
+    height: max-content;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1.125rem;
+  }
+
+  .statistics {
+    display: flex;
+    gap: 24px;
+  }
+
+  .distance {
+    flex: 1;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .travel-time {
+    flex: 1;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .statistics-title {
+    font-size: 0.875rem;
+  }
+
+  .statistics-description {
+    font-size: 1.75rem;
+  }
 }
