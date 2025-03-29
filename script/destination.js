@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Update active tab
       document.querySelectorAll(".tabs").forEach((tab) => {
-        tab.classList.remove("js-active");
+        tab.classList.remove("js-active-destination");
       });
-      event.target.classList.add("js-active");
+      event.target.classList.add("js-active-destination");
 
       const secondHero = document.querySelector('.second-hero');
       secondHero.classList.remove('show');
