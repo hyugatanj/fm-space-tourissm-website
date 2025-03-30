@@ -75,6 +75,10 @@ main {
   height: 341.33px;
 }
 
+.img-hero {
+  opacity: inherit;
+}
+
 .right {
   display: flex;
   flex-direction: column;
@@ -134,7 +138,9 @@ main {
 }
 
 .js-active-destination {
-  border-bottom: 2px solid white;
+  border-bottom: 3
+  
+  px solid white;
 }
 
 .text {
