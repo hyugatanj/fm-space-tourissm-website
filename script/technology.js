@@ -6,8 +6,8 @@ document.querySelector('.logo').addEventListener('click', () => {
 
 document.querySelectorAll('.tab').forEach((tab) => {
   tab.addEventListener('click', (event) => {
-    document.querySelectorAll('.tab').forEach((element) => element.classList.remove('js-active'));
-    tab.classList.add('js-active');
+    document.querySelectorAll('.tab').forEach((element) => element.classList.remove('js-active-tech'));
+    tab.classList.add('js-active-tech');
 
     const selectedTab = event.target.dataset.id;
     const data = dataTech.find((target) => target.id === selectedTab);
